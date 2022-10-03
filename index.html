@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>ME</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <form class="w3-container w3-black">
+    <h1>FORMULÁRIO DE SATISFAÇÃO</h1>
+    <div>
+      <label for="nome">Seu Nome:</label>
+      <input class="w3-input" type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+    <div>
+      <label for="telefone">Seu telefone:</label>
+      <input class="w3-input" type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+    </div>
+    <div>
+      <label for="email">Seu Nome:</label>
+      <input class="w3-input" type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+    </div>
+    <div>
+      <label for="faixa-etaria">Faixa Etária:</label>
+      <input class="w3-input" type="number" id="faixa-etaria" name="faixa-etaria" placeholder="Digite sua idade"
+        required>
+    </div>
+    <div class="w3-container">
+      <table class="w3-table w3-border w3-bordered w3-centered">
+        <tr>
+          <th class="w3-border">&nbsp;</th>
+          <th scope="col" class="w3-border" id="label-1-col-0"><label>Excelente</label></th>
+          <th scope="col" class="w3-border" id="label-1-col-1"><label>Bom</label></th>
+          <th scope="col" class="w3-border" id="label-1-col-2"><label>Talvez</label></th>
+          <th scope="col" class="w3-border" id="label-1-col-3"><label>Insatisfatório</label></th>
+        </tr>
+        <tr>
+          <th scope="row" class="w3-border"><label id="label-1-row-0">O que você acha da qualidade da comida?</label>
+          </th>
+          <td class="w3-border"><input aria-labelledby="label-1-row-0 label-1-col-0" name="qualidade"  type="radio"></td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-0 label-1-col-1" name="qualidade" type="radio"></td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-0 label-1-col-2" name="qualidade" type="radio"></td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-0 label-1-col-3" name="qualidade" type="radio"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="w3-border"><label id="label-1-row-1">O que você acha do nosso atendimento?</label></th>
+          <td class="w3-border"><input aria-labelledby="label-1-row-1 label-1-col-0" name="atendimento" type="radio">
+          </td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-1 label-1-col-1" name="atendimento" type="radio">
+          </td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-1 label-1-col-2" name="atendimento" type="radio">
+          </td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-1 label-1-col-3" name="atendimento" type="radio">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="w3-border"><label id="label-1-row-2">O que você acha do valor dos lanches?</label></th>
+          <td class="w3-border"><input aria-labelledby="label-1-row-2 label-1-col-0" name="valor" type="radio"></td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-2 label-1-col-1" name="valor" type="radio"></td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-2 label-1-col-2" name="valor" type="radio"></td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-2 label-1-col-3" name="valor" type="radio"></td>
+        </tr>
+        <tr>
+          <th scope="row" class="w3-border"><label id="label-1-row-3">O que você acha da diversidade dos
+              lanches?</label></th>
+          <td class="w3-border"><input aria-labelledby="label-1-row-3 label-1-col-0" name="diversidade" type="radio">
+          </td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-3 label-1-col-1" name="diversidade" type="radio">
+          </td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-3 label-1-col-2" name="diversidade" type="radio">
+          </td>
+          <td class="w3-border"><input aria-labelledby="label-1-row-3 label-1-col-3" name="diversidade" type="radio">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="w3-container">
+      <span>Qual a probabilidade de indicar para os seus amigos ?</span><br>
+      <input type="radio" name="probabilidade" id="Muito" value="Muito" checked>
+      <label for="Muito">Muito</label><br>
+      <input type="radio" name="probabilidade" id="Pouco" value="Pouco">
+      <label for="Pouco">Pouco</label><br>
+      <input type="radio" name="probabilidade" id="Talvez" value="Talvez">
+      <label for="Talvez">Talvez</label><br>
+      <input type="radio" name="probabilidade" id="Improvável" value="Improvável">
+      <label for="Improvável">Improvável</label>
+    </div>
+    <div class="w3-container">
+      <label for="mensagem">Sua mensagem:</label><br>
+      <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+    </div>
+    <input type="submit" name="acao" value="Enviar">
+  </form>
+</body>
+
+</html>

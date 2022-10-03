@@ -1,0 +1,25 @@
+form {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 25px;
+  display: grid; 
+}
+
+form h1{
+  text-align: center;
+}
+
+form div h1{
+  color: black;
+}
+
+textarea{
+  width: 100%
+}
+
+input[type="submit"]{
+  width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+}
